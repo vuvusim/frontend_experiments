@@ -28,6 +28,8 @@ def login():
 
 @app.route("/hello")
 def hello():
+    username = request.args['username']
+    print('perduotas kintamasis:', username)
     return render_template("hello.html", **request.args)
 
 
