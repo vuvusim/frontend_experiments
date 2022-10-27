@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+    <style>
+.container {
+    display: grid;
+    grid-template-rows: auto;
+    width: 70vw;
+    margin: 0 auto;
+}
+.cont-3 {
+    grid-template-columns: 33.3% 33.4% 33.3%;
+}
+.cont-4 {
+    grid-template-columns: 25% 25% 25% 25%;
+}
+.item {
+    background-color: #ccc;
+    margin: 0.5rem;
+    padding: 1rem;
+}
+    </style>
+</head>
+<body>
+    <div class="container cont-3">
+        <div class="item">Pirmas</div>
+        <div class="item">Antras</div>
+        <div class="item">Trecias</div>
+        <div class="item">Ketvirtas</div>
+        <div class="item">Penktas</div>
+        <div class="item">Sestas</div>
+    </div>
+    <div class="container cont-4">
+        <div class="item">Antras<br>Pirmas</div>
+        <div class="item">Antras<br>Antras</div>
+        <div class="item">Antras<br>Trecias</div>
+        <div class="item">Antras<br>Ketvirtas</div>
+        <div class="item">Trecias<br>Pirmas</div>
+        <div class="item">Trecias<br>Antras</div>
+        <div class="item">Trecias<br>Trecias</div>
+        <div class="item">Trecias<br>Ketvirtas</div>
+    </div>
+</body>
+</html>
