@@ -18,5 +18,16 @@ def grid():
 def fullpage():
     return render_template("styling/fullpage.html")
 
+@app.route("/index")
+def index():
+    return render_template("styling/index.html")
+
+@app.route("/flex")
+def flex():
+    return render_template("styling/flex.html")
+
+@app.route("/flexpage")
+def flexpage():
+    return render_template("styling/flexpage.html")
 if __name__ == "__main__":
     app.run(debug=True)
